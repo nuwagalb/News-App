@@ -1,0 +1,9 @@
+[run]
+omit =
+    */__pycache__/*
+     */.cache*/
+    */.vscode/*
+    */venv/*
+    
+   
+   
