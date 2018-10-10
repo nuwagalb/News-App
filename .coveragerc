@@ -1,9 +1,7 @@
 [run]
 omit =
-    */__pycache__/*
-     */.cache*/
-    */.vscode/*
+    */.local/*
     */venv/*
-    
-   
-   
+    /usr/*
+    test_headlines.py
+

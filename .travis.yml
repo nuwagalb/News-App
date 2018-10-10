@@ -14,7 +14,7 @@ before-script:
   - ./cc-test-reporter before-build
 
 script:
-  - coverage run headlines.py
+  - coverage run
   - nosetests --with-coverage
 
 after_script:
