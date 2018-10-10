@@ -4,3 +4,5 @@ venv
 __pycache__
 headlines.pyc
 test_headlines.pyc
+urllib2
+api_keys.txt
