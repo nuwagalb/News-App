@@ -6,3 +6,4 @@ headlines.pyc
 test_headlines.pyc
 api_keys.txt
 .pytest_cache
+cover
