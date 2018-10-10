@@ -1,0 +1,23 @@
+language: python
+python: 
+  - "3.6"
+env:
+  global:
+    - CC_TEST_REPORTER_ID=9d41ab17321d7b5eeb32762136b6574653af1281d345e8b5da0c44cafd888bee
+# command to install dependencies
+install:
+- pip install -r requirements.txt
+
+before-script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+script:
+  - nosetests --with-coverage
+
+after_script:
+  - if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_PYTHON_VERSION" == "3.6" ]]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
+
+after_success:
+  - coveralls
