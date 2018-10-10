@@ -34,12 +34,13 @@ will be updated soon
 
 clone repository from link below
 
-$ https://github.com/nuwagalb/News-Headlines-App.git
+$ https://github.com/nuwagalb/News-App.git
+$ cd News-App
 
 ### Set up Virtual environment by running commands below
 
 - virtualenv -p python3 venv
-- source /venv/bin/activate (for linux)
+- source venv/bin/activate (for linux)
 
 ### Get all project dependencies by running the command below.
 
@@ -51,7 +52,7 @@ $ nosetests or pytest
 
 ### or for detailed output on unit tests run with verbose.
 
-$ nosetests --with-coverage -v
+$ nosetests --with-coverage --cover-erase --cover-package=headlines --cover-html
 
 ### To setup the tables for the projet, do the following.
 

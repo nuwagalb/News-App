@@ -24,6 +24,9 @@ CURRENCY_URL ="https://openexchangerates.org//api/latest.json?app_id=3daa4f22342
 @app.route("/")
 def home():
     """displays the home page with news and weather information"""
+    #use the add function
+    total = add(4, 9)
+
     #get news feed
     publication = get_value_with_fallback("publication")
     articles = get_news(publication)
@@ -39,6 +42,7 @@ def home():
     rate, currencies = get_rate(currency_from, currency_to)
 
     response = make_response(render_template("home.html",
+                                             total=total,
                                              articles=articles,
                                              weather=weather,
                                              currency_from=currency_from,
@@ -107,6 +111,9 @@ def get_value_with_fallback(key):
         return request.cookies.get(key)
 
     return DEFAULTS[key]
+
+def add(a, b):
+    return (a + b)
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)

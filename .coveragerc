@@ -1,7 +1,3 @@
 [run]
 omit =
-    */.local/*
-    */venv/*
-    /usr/*
-    test_headlines.py
-
+    venv/*
