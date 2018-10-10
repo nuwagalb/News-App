@@ -13,10 +13,18 @@ Albert Nuwagaba
 ### Technologies and Tools used to develop this App
 
 Python
-Postman
 VSCODE (for editing and debugging)
-postgreSQL database
 Flask micro framework
+
+### Libraries
+Python feedparser library
+Python json library
+Python urllib2 library
+Python urlllib library
+
+### API's used
+OpenWeatherMap API
+Open Exchange Rates API
 
 ### The application is Hosted on Heroku on the link below.
 
