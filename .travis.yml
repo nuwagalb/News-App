@@ -15,7 +15,7 @@ install:
 
 script:
   - nosetests --with-coverage --cover-erase --cover-package=headlines --cover-html
-  - coverage report
+  - codeclimate-test-reporter --file .coverage
 
 #after_script:
   #- if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_PYTHON_VERSION" == "3.6" ]]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
