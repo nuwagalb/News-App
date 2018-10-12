@@ -47,8 +47,6 @@ $ nosetests or pytest
 
 $ nosetests --with-coverage --cover-erase --cover-package=headlines --cover-html
 
-#### To setup the tables for the projet, do the following.
-
 #### To run the application invoke the command below.
 
 $ python headlines.py
