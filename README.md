@@ -35,9 +35,9 @@ clone repository from link below
 - virtualenv -p python3 venv
 - source venv/bin/activate (for linux)
 
-#### Get all project dependencies by running the command below.
+#### Install all project dependencies by running the command below.
 
-$ pip freeze -r requirements.txt
+$ pip install -r requirements.txt
 
 #### To run the unit tests invoke/run the command below.
 
