@@ -4,7 +4,7 @@ An application that displays up-to-date news headlines, weather information, and
 
 #### Badges
 
-[![Build Status](https://travis-ci.org/nuwagalb/News-App.svg?branch=master)](https://travis-ci.org/nuwagalb/News-App) [![Coverage Status](https://coveralls.io/repos/github/nuwagalb/News-App/badge.svg)](https://coveralls.io/github/nuwagalb/News-App) [![Maintainability](https://api.codeclimate.com/v1/badges/288abda30d16f0c3fcb5/maintainability)](https://codeclimate.com/github/nuwagalb/News-App/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/288abda30d16f0c3fcb5/test_coverage)](https://codeclimate.com/github/nuwagalb/News-App/test_coverage)
+[![Build Status](https://travis-ci.org/nuwagalb/News-App.svg?branch=master)](https://travis-ci.org/nuwagalb/News-App) [![Coverage Status](https://coveralls.io/repos/github/nuwagalb/News-App/badge.svg?branch=master)](https://coveralls.io/github/nuwagalb/News-App?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/288abda30d16f0c3fcb5/maintainability)](https://codeclimate.com/github/nuwagalb/News-App/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/288abda30d16f0c3fcb5/test_coverage)](https://codeclimate.com/github/nuwagalb/News-App/test_coverage)
 
 #### Author:
 
