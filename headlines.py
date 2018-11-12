@@ -27,7 +27,6 @@ CURRENCY_URL ="https://openexchangerates.org//api/latest.json?app_id=3daa4f22342
 @app.route("/")
 def home():
     """displays the home page with news and weather information"""
-    
     #get news feed
     publication = get_value_with_fallback("publication")
     articles = get_news(publication)
@@ -115,3 +114,4 @@ def get_value_with_fallback(key):
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
+    
