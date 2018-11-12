@@ -6,15 +6,6 @@ import urllib3
 
 app = Flask(__name__)
 
-os.environ['DATABASE_URL'] = "postgres://ycclxrabaloihs:\
-b1d5777e071f4555a49fd5f28af7\
-2d7434e7b4f09a3a2df9a51c3f85\
-8ae62cca@ec2-54-243-147-162.\
-compute-1.amazonaws.com:5432/d\
-4v8ej8uqdltkl"
-
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
-
 RSS_FEEDS = {'bbc': 'http://feeds.bbci.co.uk/news/rss.xml',
              'cnn': 'http://rss.cnn.com/rss/edition.rss',
              'fox': 'http://feeds.foxnews.com/foxnews/latest',
@@ -121,9 +112,6 @@ def get_value_with_fallback(key):
         return request.cookies.get(key)
 
     return DEFAULTS[key]
-
-def add(a, b):
-    return (a + b)
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
