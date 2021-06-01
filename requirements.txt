@@ -19,5 +19,5 @@ pluggy==0.7.1
 py==1.6.0
 pytest==3.8.2
 six==1.11.0
-urllib3==1.23
+urllib3==1.26.5
 Werkzeug==0.14.1
